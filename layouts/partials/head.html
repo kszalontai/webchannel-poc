@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script type="text/javascript">
+        var ScarabQueue = ScarabQueue || [];
+        (function(id) {
+            if (document.getElementById(id)) return;
+            var js = document.createElement('script'); js.id = id;
+            js.src = '//cdn.scarabresearch.com/js/{{ .Site.Params.MerchantId }}/scarab-v2.js';
+            var fs = document.getElementsByTagName('script')[0];
+            fs.parentNode.insertBefore(js, fs);
+        })('scarab-js-api');
+    </script>
+</head>

@@ -1,0 +1,7 @@
+baseURL = "https://kszalontai.github.io/webchannel-poc/"
+languageCode = "en-us"
+title = "Web Channel 4000 demo store"
+publishDir = "docs"
+
+[params]
+  merchantId = "16635D34C74323E7"
